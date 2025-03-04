@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(240, 240, 240);
+    font-family: 'League Spartan', sans-serif;
+    color: rgb(73, 71, 71);
+    transition: background-color 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+#title:hover {
+    transform: scale(1.05);
+    color: #ff6347;
+}
+
+#img-div {
+    margin: auto;
+    width: 90%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+#image:hover {
+    opacity: 0.8;
+}
+
+#img-caption {
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#img-caption:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #ff6347;
+}
+
+#tribute-info {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    animation: fadeIn 1s ease-out;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+li:hover {
+    background-color: rgba(255, 99, 71, 0.1);
+    color: #ff6347;
+}
+
+#tribute-link {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#tribute-link:hover {
+    color: #ff6347;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.footer:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.date {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ff6347;
+}
+
+@media (max-width: 768px) {
+    #title {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+}
