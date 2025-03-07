@@ -143,3 +143,11 @@ li:hover {
     }
     
 }
+.img1 img {
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.img1 img:hover {
+    transform: scale(1.2);
+}
