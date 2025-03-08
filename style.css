@@ -5,6 +5,7 @@ body {
     transition: background-color 0.3s ease;
     margin: 0;
     padding: 0;
+    animation: fadeIn 1s ease-out;
 }
 p{
     color: black;
@@ -154,3 +155,12 @@ li:hover {
 .img1 img:hover {
     transform: scale(1.2);
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+} 
